@@ -1,43 +1,51 @@
 <?php 
-namespace product;
+
+namespace App;
 
 class Product 
 {
+	
 	private $amazonPrice;
-	private $productWeight;
-	private $productWidth;
-	private $productHeight;
-	private $productDepth;
-	private $productType;
+	
+	private $weight;
+	
+	private $width;
+	
+	
+	private $height;
+	
+	private $depth;
+	
+	private $type;
 
-	public function set(int $price)
+	public function setAmazonPrice(int $amazonPrice)
 	{
-		$this->amazonPrice = $price;
+		$this->amazonPrice = $amazonPrice;
 	}
-
-	public function get()
+	
+	public function getAmazonPrice(): int
 	{
 		return $this->amazonPrice;
 	}
-
-	public function set(int $weight)
+	
+	public function setWeight(int $weight)
 	{
-		$this->productWeight = $weight;
+		$this->weight = $weight;
 	}
 
-	public function get()
+	public function getWeight(): int
 	{
-		return $this->productWeight;
+		return $this->weight;
 	}
 
-	public function set(int $width)
+	public function setWidth(int $width)
 	{
-		$this->productWidth = $width;
+		$this->width = $width;
 	}
 
-	public function get()
+	public function getWidth(): int
 	{
-		return $this->productWidth;
+		return $this->width;
 	}
 
 	public function set(int $height)
